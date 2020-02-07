@@ -346,7 +346,6 @@ pair1poly_pipe_get_cb(void *arg)
 {
 	pair1poly_pipe *p = arg;
 	nni_msg *       msg;
-	uint32_t        hops;
 
 	if (nni_aio_result(&p->aio_get) != 0) {
 		nni_pipe_close(p->pipe);
